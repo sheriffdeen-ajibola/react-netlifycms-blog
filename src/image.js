@@ -1,0 +1,11 @@
+export { default as postTitle } from "./images/post-title.svg";
+export { default as hello } from "./images/👋 HELLO.svg";
+export { default as thumbnail1 } from "./images/post-thumbnail1.png";
+export { default as thumbnail2 } from "./images/POST THUMBNAIL2.png";
+export { default as thumbnail3 } from "./images/POST THUMBNAIL3.png";
+export { default as thumbnail4 } from "./images/POST THUMBNAIL4.png";
+export { default as thumbnail5 } from "./images/POST THUMBNAIL5.png";
+export { default as thumbnail6 } from "./images/POST THUMBNAIL6.png";
+export { default as thumbnail7 } from "./images/POST THUMBNAIL7.png";
+export { default as thumbnail8 } from "./images/POST THUMBNAIL8.png";
+export { default as thumbnail9 } from "./images/POST THUMBNAIL9.png";
