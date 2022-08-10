@@ -6,7 +6,6 @@ export const FooterBox = styled.footer`
   height: 352px;
   background-color: ${colors.navy};
   margin: 0 auto;
-  margin-top: 160px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -28,7 +27,6 @@ export const FooterBox = styled.footer`
   }
 
   h2 {
-    margin-bottom: 0px;
     font-size: 1.75rem;
     font-weight: 900;
   }

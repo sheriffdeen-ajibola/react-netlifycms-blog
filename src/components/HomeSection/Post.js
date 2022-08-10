@@ -1,7 +1,8 @@
 import React from "react";
-import { PostContainer, Textbox, PostTitle } from "./Home.styled";
-
-const Post = ({ image, category }) => {
+import Footer from "../Footer/Footer";
+import { PostContainer, Textbox, PostTitle } from "./Post.styled";
+import { Link } from "react-router-dom";
+const Post = ({ image, category, passData }) => {
   return (
     <PostContainer>
       <div>
@@ -10,9 +11,14 @@ const Post = ({ image, category }) => {
             <span>{category}</span>
             <span>AUGUST 13, 2021</span>
           </div>
-          <PostTitle>
-            10 hillarious cartoons that depict real-life problems of programmers
-          </PostTitle>
+
+          <Link to="./details" onClick={passData}>
+            <PostTitle>
+              10 hillarious cartoons that depict real-life problems of
+              programmers
+            </PostTitle>
+          </Link>
+
           <p>
             Redefined the user acquisition and redesigned the onboarding
             experience, all within 3 working weeks.

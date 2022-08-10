@@ -1,13 +1,19 @@
 import React from "react";
-import { hello } from "../../image";
 
 import { TextContainer } from "./Hero.styled";
 
-const HeroTitle = () => {
+const HeroTitle = ({ caption }) => {
   return (
     <TextContainer>
       <span>
-        <img src={hello} alt="" />
+        <div
+          style={{
+            border: caption === "👋 HELLO" ? "none" : "2px solid white",
+            padding: caption === "👋 HELLO" ? "0px" : "8px 12px 10px 12px",
+          }}
+        >
+          {caption}
+        </div>
       </span>
       <div>
         <h1>Insights about my personal and work life, and the in-betweens</h1>

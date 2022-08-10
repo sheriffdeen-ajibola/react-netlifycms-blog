@@ -6,6 +6,11 @@ export const Container = styled.div`
   box-sizing: border-box;
   min-height: 200px;
   margin: 0 auto;
+  margin-bottom: 140px;
+
+  &:last-child {
+    margin-bottom: 160px;
+  }
 `;
 
 export const HeadingSec = styled.div`
@@ -39,4 +44,8 @@ export const Copyright = styled.div`
     font-weight: 600;
     color: ${colors.navy};
   }
+`;
+
+export const HomeContainer = styled.div`
+  margin-bottom: 160px;
 `;

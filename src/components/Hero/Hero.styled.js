@@ -3,7 +3,7 @@ import styled from "styled-components";
 import colors from "../../Colors";
 
 export const Hero = styled.div`
-  width: 1550px;
+  width: 1520px;
   height: 555px;
   background-color: ${colors.navy};
   border-radius: 10px;
@@ -91,8 +91,14 @@ export const TextContainer = styled.div`
     font-family: "graphik";
   }
 
-  img {
-    margin-bottom: -20px;
+  & span div {
+    font-size: 1.2rem;
+    font-family: "graphik";
+    font-weight: 600;
+    color: #fff;
+    border-radius: 6px;
+    padding: 8px 12px 10px 12px;
+    box-sizing: border-box;
   }
   & > * {
     box-sizing: border-box;

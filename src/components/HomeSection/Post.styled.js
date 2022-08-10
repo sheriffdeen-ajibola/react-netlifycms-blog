@@ -42,6 +42,21 @@ export const Textbox = styled.div`
   display: flex;
   flex-direction: column;
 
+  & div {
+    text-align: left;
+  }
+
+  & div a {
+    color: ${colors.navy};
+    margin-bottom: 12px;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 130%;
+    text-transform: capitalize;
+    text-align: left;
+    background-color: #fff;
+  }
+
   & > div {
     display: flex;
     gap: 0;
@@ -67,9 +82,12 @@ export const Textbox = styled.div`
 `;
 
 export const PostTitle = styled.div`
+  color: ${colors.navy};
   margin-bottom: 12px;
   font-weight: 900;
   font-size: 28px;
   line-height: 130%;
   text-transform: capitalize;
+  text-align: left;
+  background-color: #fff;
 `;
