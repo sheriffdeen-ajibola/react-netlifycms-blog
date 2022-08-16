@@ -101,7 +101,7 @@ const Library = ({ style }) => {
   return (
     <div>
       <LibraryContainer>
-        <h2>book I've read</h2>
+        <h2>books I've read</h2>
 
         <div>
           <p>2020</p>

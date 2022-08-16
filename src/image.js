@@ -1,5 +1,5 @@
 export { default as postTitle } from "./images/post-title.svg";
-export { default as hello } from "./images/👋 HELLO.svg";
+
 export { default as thumbnail1 } from "./images/post-thumbnail1.png";
 export { default as thumbnail2 } from "./images/POST THUMBNAIL2.png";
 export { default as thumbnail3 } from "./images/POST THUMBNAIL3.png";

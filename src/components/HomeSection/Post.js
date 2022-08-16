@@ -2,29 +2,27 @@ import React from "react";
 import Footer from "../Footer/Footer";
 import { PostContainer, Textbox, PostTitle } from "./Post.styled";
 import { Link } from "react-router-dom";
-const Post = ({ image, category, passData }) => {
+import Markdown from "react-markdown";
+
+const Post = ({ image, category, passData, title, date, content }) => {
   return (
     <PostContainer>
       <div>
         <Textbox>
           <div>
             <span>{category}</span>
-            <span>AUGUST 13, 2021</span>
+            <span>{date}</span>
           </div>
 
-          <Link to="./details" onClick={passData}>
-            <PostTitle>
-              10 hillarious cartoons that depict real-life problems of
-              programmers
-            </PostTitle>
+          <Link to="./postdetails" onClick={passData}>
+            <PostTitle>{title}</PostTitle>
           </Link>
 
           <p>
-            Redefined the user acquisition and redesigned the onboarding
-            experience, all within 3 working weeks.
+            <Markdown children={content} escapeHTML={false} />
           </p>
         </Textbox>
-        <img src={image} alt="" />
+        <img src={image} alt="post image" />
       </div>
     </PostContainer>
   );

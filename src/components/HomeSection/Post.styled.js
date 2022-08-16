@@ -38,7 +38,7 @@ export const PostContainer = styled.div`
 export const Textbox = styled.div`
   width: 610px;
   height: 100%;
-  padding: 7px 0;
+  padding: 0 0;
   display: flex;
   flex-direction: column;
 
@@ -48,7 +48,7 @@ export const Textbox = styled.div`
 
   & div a {
     color: ${colors.navy};
-    margin-bottom: 12px;
+    margin-bottom: 7px;
     font-weight: 900;
     font-size: 28px;
     line-height: 130%;
@@ -62,7 +62,7 @@ export const Textbox = styled.div`
     gap: 0;
     height: 34px;
     min-width: 252px;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
 
     span:last-child {
       font-weight: 600;
@@ -77,6 +77,10 @@ export const Textbox = styled.div`
       background-color: ${colors.blue};
       text-transform: uppercase;
       border-radius: 6px 0px 0px 6px;
+    }
+
+    & > em {
+      font-weight: 700;
     }
   }
 `;

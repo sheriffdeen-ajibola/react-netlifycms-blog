@@ -1,6 +1,6 @@
 import HeroSection from "./components/Hero/HeroSection";
 import GlobalStyle from "./Global";
-
+import postlist from "./posts.json";
 import React from "react";
 import { useState } from "react";
 import { HeadingSec, Container, HomeContainer, Copyright } from "./Styled";
@@ -30,7 +30,9 @@ function App() {
       }
     });
   };
-
+  const excerptList = postlist.map((post, i) => {
+    return post.content.split(" ").slice(0, 15).join(" ");
+  });
   return (
     <div className="App ">
       <GlobalStyle />
@@ -46,15 +48,20 @@ function App() {
                 <HomeContainer>
                   <Container>
                     <HeadingSec>Design tools</HeadingSec>
-                    {posts
-                      .filter((post) => post.category === "design tools")
-                      .slice(0, 3)
-                      .map((post) => (
-                        <Post image={post.image} category={post.category} />
+                    {postlist &&
+                      postlist.map((post, i) => (
+                        <Post
+                          category={post.category}
+                          title={post.title}
+                          date={post.date}
+                          author={post.author}
+                          content={excerptList[i]}
+                          image={post.image}
+                        />
                       ))}
                   </Container>
 
-                  <Container>
+                  {/* <Container>
                     <HeadingSec>weekly updates</HeadingSec>
                     {posts
                       .filter((post) => post.category === "weekly updates")
@@ -76,7 +83,7 @@ function App() {
                           passData={() => handlePassData(post.id)}
                         />
                       ))}
-                  </Container>
+                  </Container> */}
                 </HomeContainer>
                 <div>
                   <Footer />
@@ -92,7 +99,10 @@ function App() {
             path="/category"
             element={<Categories category={category} />}
           />
-          <Route path="/details" element={<DetailsPage data={pageData} />} />
+          <Route
+            path="/postdetails"
+            element={<DetailsPage data={pageData} />}
+          />
         </Routes>
       </BrowserRouter>
     </div>

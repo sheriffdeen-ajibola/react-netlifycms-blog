@@ -17,7 +17,7 @@ const Navbar = ({ changeCaption, navigateLibrary, navigateCategory }) => {
         </li>
         <li>
           <Link to="/Category" onClick={navigateCategory}>
-            weekly updates
+            daily updates
           </Link>
         </li>
         <li>

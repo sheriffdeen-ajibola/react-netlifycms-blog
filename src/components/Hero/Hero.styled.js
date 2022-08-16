@@ -3,7 +3,7 @@ import styled from "styled-components";
 import colors from "../../Colors";
 
 export const Hero = styled.div`
-  width: 1520px;
+  width: 1550px;
   height: 555px;
   background-color: ${colors.navy};
   border-radius: 10px;
