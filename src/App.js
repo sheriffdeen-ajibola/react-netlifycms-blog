@@ -89,7 +89,7 @@ function App() {
                   <Footer />
                 </div>
                 <Copyright>
-                  <p>Copyright 2021 - Elikem Daniel</p>
+                  <p>Copyright 2021 - Sheriffdeen Ajibola</p>
                 </Copyright>
               </>
             }
