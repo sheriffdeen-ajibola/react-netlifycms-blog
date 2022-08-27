@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -33,6 +33,7 @@
     -->
     <title>React App</title>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
   </head>
   <body style="box-sizing: border-box">
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -49,7 +50,7 @@
     -->
     <script>
       if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
+        window.netlifyIdentity.on("init", user => {
           if (!user) {
             window.netlifyIdentity.on("login", () => {
               document.location.href = "/admin/";
