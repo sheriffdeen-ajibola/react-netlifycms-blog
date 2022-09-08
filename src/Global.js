@@ -6,6 +6,7 @@ import graphikRegular from "./fonts/GraphikRegular.otf";
 import graphikLight from "./fonts/GraphikLight.otf";
 
 const GlobalStyle = createGlobalStyle`
+
   @font-face {
     font-family: 'graphik';
     src: url(${graphikBold}) format('truetype');
@@ -53,7 +54,20 @@ const GlobalStyle = createGlobalStyle`
     &:active,&:visited{
       color: white;
     }
+    
   }
+
+  *{
+    font-family: 'graphik' 
+  }
+
+  @media screen and (max-width: 1400px){
+    html{
+font-size: 15px;
+    }
+  }
+
+
 
 `;
 

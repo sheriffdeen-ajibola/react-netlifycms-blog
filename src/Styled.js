@@ -20,6 +20,8 @@ export const HeadingSec = styled.div`
   font-family: "graphik";
   margin-bottom: 63px;
   text-transform: capitalize;
+
+ 
 `;
 
 export const Space = styled.div`

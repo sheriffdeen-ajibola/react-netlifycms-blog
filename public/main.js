@@ -45,6 +45,7 @@ const getPosts = () => {
         const content = parseContent({ lines, metadataIndices });
         const date = new Date(metadata.date);
         const timestamp = date.getTime() / 1000;
+        console.log(timestamp)
 
         post = {
           id: timestamp,

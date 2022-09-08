@@ -29,3 +29,4 @@ export { default as img17 } from "./images/image 17.png";
 export { default as img18 } from "./images/image 18.png";
 export { default as rectangle } from "./images/Rectangle 123.png";
 export { default as rect } from "./images/Rectangle 124.png";
+export { default as menu } from "./images/icons8-menu-64.svg";

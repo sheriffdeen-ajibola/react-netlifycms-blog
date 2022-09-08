@@ -3,7 +3,7 @@ import styled from "styled-components";
 import colors from "../../Colors";
 
 export const Hero = styled.div`
-  width: 1550px;
+  width: 100%;
   height: 555px;
   background-color: ${colors.navy};
   border-radius: 10px;
@@ -26,6 +26,14 @@ export const Nav = styled.div`
   text-transform: capitalize;
   margin-bottom: 5px;
   box-sizing: border-box;
+
+@media screen and (max-width: 1500px){
+  width: 1200px;
+}
+
+@media screen and (max-width: 1300px){
+  width: 1140px;
+}
 
   span {
     width: 108px;

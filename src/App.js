@@ -7,29 +7,28 @@ import { HeadingSec, Container, HomeContainer, Copyright } from "./Styled";
 import Post from "./components/HomeSection/Post";
 import Footer from "./components/Footer/Footer";
 import Library from "./components/Library/Library";
-import posts from "./components/Array";
-import Categories from "./components/Categories/Categories";
+import Categories from "./Categories";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DetailsPage from "./components/Details/DetailsPage";
 
 function App() {
-  const [category, setCategory] = useState("");
+  const [category, setCategory] = useState("design tools");
 
-  const [pageData, setPageData] = useState({});
+  // const [pageData, setPageData] = useState({});
 
-  const handleNavigateCategory = (e) => {
-    setCategory(e.target.textContent);
-  };
+  // const handleNavigateCategory = (e) => {
+  //   setCategory(e.target.textContent);
+  // };
 
-  const handlePassData = (id) => {
-    const pageInfo = posts;
+  // const handlePassData = (id) => {
+  //   const pageInfo = posts;
 
-    pageInfo.forEach((post) => {
-      if (post.id === id) {
-        setPageData({ ...post });
-      }
-    });
-  };
+  //   pageInfo.forEach((post) => {
+  //     if (post.id === id) {
+  //       setPageData({ ...post });
+  //     }
+  //   });
+  // };
   const excerptList = postlist.map((post, i) => {
     return post.content.split(" ").slice(0, 15).join(" ");
   });
@@ -38,7 +37,7 @@ function App() {
       <GlobalStyle />
 
       <BrowserRouter>
-        <HeroSection navigateCategory={(e) => handleNavigateCategory(e)} />
+        <HeroSection setCategory={setCategory} category={category} />
 
         <Routes>
           <Route
@@ -57,6 +56,7 @@ function App() {
                           author={post.author}
                           content={excerptList[i]}
                           image={post.image}
+                          id={post.id}
                         />
                       ))}
                   </Container>
@@ -96,12 +96,25 @@ function App() {
           />
           <Route path="/library" element={<Library />} />
           <Route
-            path="/category"
+            path="/categories/:category"
+            element={<Categories setCategory={setCategory} category={category} />}
+          />
+
+          {/* <Route
+            path="/category/dailyupdates"
             element={<Categories category={category} />}
           />
+
           <Route
-            path="/postdetails"
-            element={<DetailsPage data={pageData} />}
+            path="/category/tutorials"
+            element={<Categories category={category} />}
+          />
+ */}
+
+
+          <Route
+            path="/blogs/:title"
+            element={<DetailsPage/>}
           />
         </Routes>
       </BrowserRouter>

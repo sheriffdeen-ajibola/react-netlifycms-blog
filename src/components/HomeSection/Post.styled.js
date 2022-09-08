@@ -4,7 +4,7 @@ import colors from "../../Colors";
 export const PostContainer = styled.div`
   width: 100%;
   height: 250px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 
   &:not(:last-child) {
     border-bottom: 1px solid #ebf2fe;
@@ -14,6 +14,14 @@ export const PostContainer = styled.div`
     font-family: "graphik";
     color: ${colors.navy};
   }
+
+    & em {
+      font-weight: 500;
+      display: inline-block;
+      margin-top: -50px;
+      font-family: lobster;
+      font-size:1.25rem;
+    }
 
   & > div {
     height: 210px;
@@ -38,7 +46,7 @@ export const PostContainer = styled.div`
 export const Textbox = styled.div`
   width: 610px;
   height: 100%;
-  padding: 0 0;
+  padding: 7px 0px;
   display: flex;
   flex-direction: column;
 
@@ -69,6 +77,7 @@ export const Textbox = styled.div`
       background-color: #fff;
     }
 
+   
     & > * {
       min-width: 126px;
       padding: 8px 12px 10px 12px;
@@ -79,9 +88,7 @@ export const Textbox = styled.div`
       border-radius: 6px 0px 0px 6px;
     }
 
-    & > em {
-      font-weight: 700;
-    }
+  
   }
 `;
 
@@ -94,4 +101,8 @@ export const PostTitle = styled.div`
   text-transform: capitalize;
   text-align: left;
   background-color: #fff;
+
+  @media screen and (max-width: 1300px){
+  font-size: 25px;
+}
 `;
