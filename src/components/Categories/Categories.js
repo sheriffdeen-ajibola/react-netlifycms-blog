@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Container, Copyright, HeadingSec } from "./Styled";
-import Footer from "./components/Footer/Footer";
-import Post from "./components/HomeSection/Post";
-import { CategoryContainer, Btndv, Button } from "./components/Categories/categories.styled";
-import postlist from './posts.json'
+import { Container, Copyright, HeadingSec } from "../../Styled";
+import Footer from "../Footer/Footer";
+import Post from "../HomeSection/Post";
+import { CategoryContainer, Btndv, Button } from "./categories.styled";
+import postlist from '../../posts.json'
 import { useParams } from "react-router-dom";
 
 const Categories = () => {

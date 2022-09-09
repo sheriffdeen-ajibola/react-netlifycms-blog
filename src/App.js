@@ -7,7 +7,7 @@ import { HeadingSec, Container, HomeContainer, Copyright } from "./Styled";
 import Post from "./components/HomeSection/Post";
 import Footer from "./components/Footer/Footer";
 import Library from "./components/Library/Library";
-import Categories from "./Categories";
+import Categories from "./components/Categories/Categories";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DetailsPage from "./components/Details/DetailsPage";
 
