@@ -5,6 +5,8 @@ import { TextContainer } from "./Hero.styled";
 const HeroTitle = ({ caption }) => {
   return (
     <TextContainer>
+
+      <div>
       <span>
         <div
           style={{
@@ -15,7 +17,6 @@ const HeroTitle = ({ caption }) => {
           {caption}
         </div>
       </span>
-      <div>
         <h1>Insights about my personal and work life, and the in-betweens</h1>
       </div>
     </TextContainer>

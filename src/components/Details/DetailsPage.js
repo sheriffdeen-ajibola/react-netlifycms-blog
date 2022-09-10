@@ -18,13 +18,19 @@ import postlist from '../../posts.json'
 const DetailsPage = () => {
     
   const { title } = useParams();
+  
   const post = postlist.find((it)=> title === (it.id).toString() )
   console.log({postlist, title, post});
+
+
   return (
 
  <>
-<HeadingSec >{post.title}</HeadingSec>
+ <Container style={{textAlign:"center"}}>
+ <HeadingSec  >{post.title}</HeadingSec>
 <span>By {post.author}</span>
+ </Container>
+
 
 
  </>

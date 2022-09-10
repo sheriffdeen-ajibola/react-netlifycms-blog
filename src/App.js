@@ -11,6 +11,7 @@ import Categories from "./components/Categories/Categories";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DetailsPage from "./components/Details/DetailsPage";
 
+
 function App() {
   const [category, setCategory] = useState("design tools");
 

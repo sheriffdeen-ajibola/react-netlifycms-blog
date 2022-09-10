@@ -9,7 +9,6 @@ export const Hero = styled.div`
   border-radius: 10px;
   margin: 0 auto;
   margin-bottom: 100px;
-
   box-sizing: inherit;
 `;
 
@@ -31,9 +30,18 @@ export const Nav = styled.div`
   width: 1200px;
 }
 
-@media screen and (max-width: 1300px){
-  width: 1140px;
+@media screen and (max-width: 1270px){
+  width: 950px;
+
+  
 }
+@media screen and (max-width: 1000px){
+  width: 750px;
+
+  
+}
+
+
 
   span {
     width: 108px;
@@ -48,6 +56,8 @@ export const Nav = styled.div`
     font-family: "graphik";
     font-size: 0.875rem;
     font-weight: 500;
+
+   
   }
 `;
 
@@ -57,6 +67,12 @@ export const Ul = styled.ul`
   width: 483px;
   justify-content: space-between;
   padding: 0;
+
+  @media screen and (max-width: 1300px){
+  width: 400px;
+
+  
+}
 
   li {
     color: ${colors.white};
@@ -69,7 +85,14 @@ export const Ul = styled.ul`
 
   li:not(:last-chiild) {
     margin-right: 40px;
+    @media screen and (max-width: 1300px){
+  margin-right: 4px;
+
+  
+}
+
   }
+
 `;
 
 export const Logo = styled.div`
@@ -91,6 +114,11 @@ export const TextContainer = styled.div`
   margin: 0 auto;
   box-sizing: border-box;
   padding-right: 25px;
+
+  @media screen and (max-width: 1000px){
+  text-align: center;
+  width: 850px;
+}
 
   h1 {
     font-size: 3.3rem;

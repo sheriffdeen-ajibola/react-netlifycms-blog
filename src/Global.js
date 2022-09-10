@@ -65,6 +65,20 @@ const GlobalStyle = createGlobalStyle`
     html{
 font-size: 15px;
     }
+
+    @media screen and (max-width: 1250px){
+    html{
+font-size: 14px;
+    }
+
+    
+
+  }
+    @media screen and (max-width: 1100px){
+    html{
+font-size: 13px;
+    }
+    
   }
 
 

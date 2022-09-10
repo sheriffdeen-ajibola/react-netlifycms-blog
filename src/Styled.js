@@ -11,6 +11,11 @@ export const Container = styled.div`
   &:last-child {
     margin-bottom: 160px;
   }
+  @media screen and (max-width: 1100px){
+ 
+    width: 850px;
+  
+}
 `;
 
 export const HeadingSec = styled.div`
