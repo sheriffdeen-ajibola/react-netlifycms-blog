@@ -164,7 +164,7 @@ export const TextContainer = styled.div`
   }
 
    @media screen and (max-width: 590px){
-   font-size: 2.6rem;
+   font-size: 2rem;
 
 
     
