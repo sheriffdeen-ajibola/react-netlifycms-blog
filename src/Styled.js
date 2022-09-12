@@ -45,7 +45,6 @@ export const Copyright = styled.div`
   justify-content: center;
   margin: 0 auto;
   font-family: "graphik";
-background: red;
   border-top: 1px solid #efefef;
   margin-bottom: 40px;
 
