@@ -3,17 +3,35 @@ import styled from "styled-components";
 import colors from "../../Colors";
 
 export const Hero = styled.div`
-  width: 100%;
+  width: 99%;
   height: 555px;
   background-color: ${colors.navy};
   border-radius: 10px;
   margin: 0 auto;
   margin-bottom: 100px;
   box-sizing: inherit;
+
+
+  @media screen and (max-width: 1400px){
+   height: 500px;
+    
+  }
+  
+  @media screen and (max-width: 1250px){
+   height: 455px;
+   margin-bottom: 70px;
+  }
+
+  @media screen and (max-width: 900px){
+   height: 45vh;
+   width: 100vw;
+   border-radius: 0px;
+   margin-bottom: 50px;
+  }
 `;
 
 export const Nav = styled.div`
-  width: 1320px;
+ width: 85%;
   margin: 0 auto;
   height: 120px;
   background-color: transparent;
@@ -85,11 +103,7 @@ export const Ul = styled.ul`
 
   li:not(:last-chiild) {
     margin-right: 40px;
-    @media screen and (max-width: 1300px){
-  margin-right: 4px;
-
   
-}
 
   }
 
@@ -105,7 +119,7 @@ export const Logo = styled.div`
 export const TextContainer = styled.div`
   background-color: transparent;
   height: 430px;
-  width: 970px;
+  width: 60.7vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,17 +128,50 @@ export const TextContainer = styled.div`
   margin: 0 auto;
   box-sizing: border-box;
   padding-right: 25px;
+  /* background: red; */
 
-  @media screen and (max-width: 1000px){
-  text-align: center;
-  width: 850px;
-}
+  @media screen and (max-width: 1400px){
+    width: 70vw;
+    height: 60%;
+  }
+
+  @media screen and (max-width: 1250px){
+    width: 75vw;
+  }
+
+  @media screen and (max-width: 1100px){
+  
+   text-align: center;
+  }
+  @media screen and (max-width: 700px){
+   font-size: 2.8rem;
+   
+  }
+
+
+ 
 
   h1 {
     font-size: 3.3rem;
     font-weight: 900;
     color: #fff;
     font-family: "graphik";
+    width: 100%;
+    @media screen and (max-width: 1100px){
+   font-size: 2.8rem;
+   text-align: center;
+  
+  }
+
+   @media screen and (max-width: 590px){
+   font-size: 2.6rem;
+
+
+    
+  }
+
+   
+   
   }
 
   & span div {
@@ -139,4 +186,10 @@ export const TextContainer = styled.div`
   & > * {
     box-sizing: border-box;
   }
+
+  /* @media screen and (max-width: 1000px){
+  text-align: center;
+  width: 850px;
+
+} */
 `;

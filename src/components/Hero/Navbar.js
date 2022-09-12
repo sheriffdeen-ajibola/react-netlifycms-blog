@@ -7,8 +7,8 @@ import { useParams } from "react-router-dom";
 
 
 
-const Navbar = ({ changeCaption, navigateLibrary, navigateCategory, category, setCategory}) => {
-  // const catArray = ['design tools', 'daily updates', 'tutorials']
+const Navbar = ({ category, setCategory}) => {
+  
 
   const changeCategory = (e) => {
     setCategory(e.target.textContent)

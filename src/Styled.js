@@ -2,7 +2,7 @@ import styled from "styled-components";
 import colors from "./Colors";
 
 export const Container = styled.div`
-  width: 970px;
+  width: 60.7vw;
   box-sizing: border-box;
   min-height: 200px;
   margin: 0 auto;
@@ -11,11 +11,18 @@ export const Container = styled.div`
   &:last-child {
     margin-bottom: 160px;
   }
+  @media screen and (max-width: 1400px){
+    width: 70vw;
+  }
+
+  @media screen and (max-width: 1250px){
+    width: 75vw;
+  }
+
   @media screen and (max-width: 1100px){
- 
-    width: 850px;
-  
-}
+   width: 90vw;
+    
+  }
 `;
 
 export const HeadingSec = styled.div`
@@ -29,20 +36,16 @@ export const HeadingSec = styled.div`
  
 `;
 
-export const Space = styled.div`
-  width: 100%;
-  height: 100px;
-`;
 
 export const Copyright = styled.div`
-  width: 970px;
+  width: 100vw;
   height: 58px;
   display: flex;
   align-items: end;
   justify-content: center;
   margin: 0 auto;
   font-family: "graphik";
-
+background: red;
   border-top: 1px solid #efefef;
   margin-bottom: 40px;
 

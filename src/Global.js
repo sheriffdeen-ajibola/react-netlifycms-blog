@@ -57,6 +57,11 @@ const GlobalStyle = createGlobalStyle`
     
   }
 
+  body{
+    padding: 0;
+    margin: 0;
+  }
+
   *{
     font-family: 'graphik' 
   }
@@ -70,13 +75,14 @@ font-size: 15px;
     html{
 font-size: 14px;
     }
+   
 
     
 
   }
     @media screen and (max-width: 1100px){
     html{
-font-size: 13px;
+font-size: 12px;
     }
     
   }

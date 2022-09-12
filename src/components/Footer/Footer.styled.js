@@ -2,7 +2,7 @@ import styled from "styled-components";
 import colors from "../../Colors";
 
 export const FooterBox = styled.footer`
-  width: 970px;
+  width: 60%;
   height: 352px;
   background-color: ${colors.navy};
   margin: 0 auto;
@@ -15,6 +15,14 @@ export const FooterBox = styled.footer`
   color: #fff;
   position: relative;
   overflow: hidden;
+
+
+  @media screen and (max-width: 900px){
+   
+  width: 100%;
+  border-radius: 0;
+
+}
 
   div {
     position: absolute;
@@ -49,9 +57,13 @@ export const FooterBox = styled.footer`
     overflow: hidden;
     border-radius: 5px;
 
+    @media screen and (max-width: 590px){
+       width: 85%;
+      }
+
     input {
       height: 100%;
-      width: 250px;
+      width: 62.5%;
       border: none;
       background-color: #fff;
       padding-left: 20px;
@@ -60,7 +72,7 @@ export const FooterBox = styled.footer`
     }
     button {
       height: 100%;
-      width: 150px;
+      width: 37.5%;
       border: none;
       background-color: ${colors.green};
       text-transform: uppercase;

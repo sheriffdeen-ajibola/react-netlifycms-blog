@@ -4,12 +4,13 @@ import colors from "../../Colors";
 export const CategoryContainer = styled.div`
   box-sizing: border-box;
   font-family: "graphik";
-  min-height: 3vh;
-  width: 970px;
+
+  width: 99vw;
   margin: 0 auto;
+  
 `;
 export const Btndv = styled.div`
-  width: 970px;
+  width: 100vw;
   height: 40px;
   background-color: transparent;
   margin: 0 auto;
