@@ -64,6 +64,7 @@ const GlobalStyle = createGlobalStyle`
 
   *{
     font-family: 'graphik' 
+    z-index: -1000000000;
   }
 
   @media screen and (max-width: 1400px){

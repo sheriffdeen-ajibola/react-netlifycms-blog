@@ -13,7 +13,7 @@ import DetailsPage from "./components/Details/DetailsPage";
 
 
 function App() {
-  const [category, setCategory] = useState("design tools");
+  const [category, setCategory] = useState("");
 
   // const [pageData, setPageData] = useState({});
 

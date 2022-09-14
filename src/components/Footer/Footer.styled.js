@@ -15,12 +15,13 @@ export const FooterBox = styled.footer`
   color: #fff;
   position: relative;
   overflow: hidden;
+  z-index: -1;
 
 
   @media screen and (max-width: 900px){
    
-  width: 100%;
-  border-radius: 0;
+  width: 99%;
+
 
 }
 

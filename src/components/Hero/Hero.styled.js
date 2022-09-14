@@ -24,8 +24,6 @@ export const Hero = styled.div`
 
   @media screen and (max-width: 900px){
    height: 45vh;
-   width: 100vw;
-   border-radius: 0px;
    margin-bottom: 50px;
   }
 `;
@@ -44,19 +42,21 @@ export const Nav = styled.div`
   margin-bottom: 5px;
   box-sizing: border-box;
 
+
+
+ 
+
 @media screen and (max-width: 1500px){
   width: 1200px;
 }
-
 @media screen and (max-width: 1270px){
-  width: 950px;
-
-  
+  width: 950px;  
 }
 @media screen and (max-width: 1000px){
   width: 750px;
-
-  
+}
+@media screen and (max-width: 900px){
+width: 80vw;
 }
 
 
@@ -74,6 +74,10 @@ export const Nav = styled.div`
     font-family: "graphik";
     font-size: 0.875rem;
     font-weight: 500;
+    @media screen and (max-width: 900px){
+      display: none;
+    }
+   
 
    
   }
@@ -85,6 +89,10 @@ export const Ul = styled.ul`
   width: 483px;
   justify-content: space-between;
   padding: 0;
+  @media screen and (max-width: 900px){
+display: none;
+}
+  
 
   @media screen and (max-width: 1300px){
   width: 400px;
@@ -146,6 +154,9 @@ export const TextContainer = styled.div`
   @media screen and (max-width: 700px){
    font-size: 2.8rem;
    
+  }
+  @media screen and (max-width: 590px){
+width: 100vw;
   }
 
 

@@ -14,6 +14,7 @@ export const PostContainer = styled.div`
    @media screen and (max-width: 590px){
     height: 500px;
     
+    
   }
 
   &:not(:last-child) {
@@ -56,6 +57,7 @@ export const PostContainer = styled.div`
   @media screen and (max-width: 590px){
     height: 100%;
     flex-direction: column-reverse;
+
     
     
   }
@@ -106,7 +108,7 @@ export const Textbox = styled.div`
 
   @media screen and (max-width: 590px){
     
-    width: 100%
+    width: 100%;
   }
   
 
