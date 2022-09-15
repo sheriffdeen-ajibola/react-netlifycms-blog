@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Copyright, HeadingSec } from "../../Styled";
-
+import styled from "styled-components";
+import colors from "../../Colors";
+import Markdown from "react-markdown";
 import Footer from "../Footer/Footer";
 import {
   DetailsContainer,
@@ -13,6 +15,17 @@ import Post from "../HomeSection/Post";
 import { rect } from "../../image";
 import { useParams } from "react-router-dom";
 import postlist from '../../posts.json'
+import Navbar from "../Hero/Navbar";
+
+
+const Title = styled.h1`
+ color: ${colors.navy};
+  font-size: 2.1rem;
+  font-weight: 900;
+  font-family: "graphik";
+  margin-bottom: 2px;
+  text-transform: capitalize;
+`
 
 
 const DetailsPage = () => {
@@ -26,10 +39,27 @@ const DetailsPage = () => {
   return (
 
  <>
- <Container style={{textAlign:"center"}}>
- <HeadingSec  >{post.title}</HeadingSec>
-<span>By {post.author}</span>
+ <Container style={{textAlign:"center",marginBottom:"-40px"}}>
+<Title>{post.title}</Title>
+<div style={{textAlign:"center",display: "flex",flexWrap: "wrap",gap: "5px",fontWeight: "600",justifyContent: "center", margin:"0 auto", width: "50vw",color:`${colors.navy}`}}>
+   <span>{post.author}</span>
+   ||
+   <span>{post.date}</span>
+
+
+</div>
+
  </Container>
+<Container  style={{marginBottom:"-10px",}}>
+<Image>
+  <img src={post.image} alt="" />
+</Image>
+</Container>
+<DetailsContainer>
+
+<Markdown children={post.content} escapeHTML={false} />
+</DetailsContainer>
+
 
 
 

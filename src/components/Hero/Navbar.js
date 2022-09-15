@@ -24,8 +24,8 @@ z-index: 1000;
 top: 2.3rem;
 right: 6rem;
 border-radius: 50%;
-height: 5rem;
-width: 5rem;
+height: 4.5rem;
+width: 4.5rem;
 text-align: center;
 box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
 @media screen and (max-width: 700px){
@@ -61,16 +61,16 @@ const Icon = styled.div`
 position: relative;
 background-color:${props => (props.clicked ? "transparent" : `${colors.navy}`)};
 transition: all .3s;
-width: 3rem;
+width: 2.5rem;
 height: 2px;
 display: inline-block;
-margin-top: 2.5rem;
+margin-top: 2.3rem;
 
 
 &::before, &::after{
   content: "";
   background-color: ${colors.navy};
-  width: 3rem;
+  width: 2.5rem;
   height: 2px;
   display: inline-block;
 
@@ -122,8 +122,8 @@ width: 100%;
 `
 const Itemlink = styled(Link)`
 display: inline-block;
-font-size: 3rem;
-font-weight: 300;
+font-size: 2rem;
+font-weight: 500;
 text-decoration: none;
 color: ${colors.blue};
 padding: 1rem 2rem ;

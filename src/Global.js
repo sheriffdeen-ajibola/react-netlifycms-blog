@@ -47,7 +47,14 @@ const GlobalStyle = createGlobalStyle`
     font-display: auto;
   }
  
-  a{
+
+  body{
+    padding: 0;
+    margin: 0;
+
+    & *{
+
+      a{
     text-decoration: none;
     font-style: none;
 
@@ -56,22 +63,19 @@ const GlobalStyle = createGlobalStyle`
     }
     
   }
-
-  body{
-    padding: 0;
-    margin: 0;
+    }
   }
 
   *{
     font-family: 'graphik' 
-    z-index: -1000000000;
+   
   }
 
   @media screen and (max-width: 1400px){
     html{
 font-size: 15px;
     }
-
+  }
     @media screen and (max-width: 1250px){
     html{
 font-size: 14px;

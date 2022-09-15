@@ -2,19 +2,22 @@ import styled from "styled-components";
 import colors from "../../Colors";
 
 export const DetailsContainer = styled.div`
-  width: 100%;
-  margin-bottom: 172px;
+  width: 60.7vw;
+  box-sizing: border-box;
+  min-height: 200px;
+  margin: 0 auto;
+ 
   & > * {
     color: ${colors.navy};
   }
 `;
 
 export const Image = styled.div`
-  width: 1520px;
+  width: 100%;
   margin: 0 auto;
-  margin-top: -100px;
-  height: 740px;
-  margin-bottom: 100px;
+ 
+  height: 30rem;
+  margin-bottom: 30px;
 
   & > * {
     box-sizing: border-box;

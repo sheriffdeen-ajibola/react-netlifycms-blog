@@ -21,7 +21,7 @@ import {
   img17,
   img18,
 } from "../../image";
-import { Copyright } from "../../Styled";
+import { Copyright, HeadingSec } from "../../Styled";
 
 const Library = ({ style }) => {
   const books = [
@@ -101,7 +101,7 @@ const Library = ({ style }) => {
   return (
     <div>
       <LibraryContainer>
-        <h2>books I've read</h2>
+       <HeadingSec>books I've read</HeadingSec>
 
         <div>
           <p>2020</p>
