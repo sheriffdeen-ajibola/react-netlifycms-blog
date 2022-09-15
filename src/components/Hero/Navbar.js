@@ -22,13 +22,24 @@ position: fixed;
 cursor: pointer;
 z-index: 1000;
 top: 2.3rem;
-right: 5rem;
+right: 6rem;
 border-radius: 50%;
 height: 5rem;
 width: 5rem;
 text-align: center;
 box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
-
+@media screen and (max-width: 700px){
+  right: 5rem;
+}
+@media screen and (max-width: 600px){
+  right: 4rem;
+}
+@media screen and (max-width: 500px){
+  right: 3rem;
+}
+@media screen and (max-width: 400px){
+  right: 2rem;
+}
 `
 const NavBackground = styled.div`
 position: fixed;
@@ -103,6 +114,9 @@ top: 50%;left: 50%;
 transform  : translate(-50%,-50%);
 text-align: center;
 width: 100%;
+@media screen and (max-width: 600px){
+  transform  : translate(-55%,-55%);
+}
 
 
 `
