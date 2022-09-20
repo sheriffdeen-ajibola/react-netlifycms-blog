@@ -51,6 +51,7 @@ const GlobalStyle = createGlobalStyle`
   body{
     padding: 0;
     margin: 0;
+    /* overflow: hidden; */
 
     & *{
 

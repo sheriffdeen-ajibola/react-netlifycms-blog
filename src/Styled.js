@@ -38,7 +38,7 @@ export const HeadingSec = styled.div`
 
 
 export const Copyright = styled.div`
-  width: 100vw;
+  width: 90vw;
   height: 58px;
   display: flex;
   align-items: end;

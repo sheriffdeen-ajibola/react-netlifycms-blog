@@ -56,8 +56,10 @@ const DetailsPage = () => {
 </Image>
 </Container>
 <DetailsContainer>
-
+<p style={{fontWeight: 500}}>
 <Markdown children={post.content} escapeHTML={false} />
+</p>
+
 </DetailsContainer>
 
 

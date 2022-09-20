@@ -23,7 +23,7 @@ export const Hero = styled.div`
   }
 
   @media screen and (max-width: 900px){
-   height: 45vh;
+   height: 55vh;
    margin-bottom: 50px;
   }
 `;
@@ -152,11 +152,11 @@ export const TextContainer = styled.div`
    text-align: center;
   }
   @media screen and (max-width: 700px){
-   font-size: 2.8rem;
+   font-size: 3.5rem;
    
   }
   @media screen and (max-width: 590px){
-width: 100vw;
+width: 90vw;
   }
 
 
@@ -175,7 +175,7 @@ width: 100vw;
   }
 
    @media screen and (max-width: 590px){
-   font-size: 2rem;
+    font-size: 2rem;
 
 
     
