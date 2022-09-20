@@ -25,6 +25,8 @@ export const Hero = styled.div`
   @media screen and (max-width: 900px){
    height: 55vh;
    margin-bottom: 50px;
+   width: 98%;
+   border-radius: 0px 0px 10px 10px;
   }
 `;
 
