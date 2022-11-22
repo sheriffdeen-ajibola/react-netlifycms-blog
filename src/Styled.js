@@ -6,22 +6,21 @@ export const Container = styled.div`
   box-sizing: border-box;
   min-height: 200px;
   margin: 0 auto;
-  margin-bottom: 140px;
+  margin-bottom: 50px;
 
   &:last-child {
     margin-bottom: 160px;
   }
-  @media screen and (max-width: 1400px){
+  @media screen and (max-width: 1400px) {
     width: 70vw;
   }
 
-  @media screen and (max-width: 1250px){
+  @media screen and (max-width: 1250px) {
     width: 75vw;
   }
 
-  @media screen and (max-width: 1100px){
-   width: 90vw;
-    
+  @media screen and (max-width: 1100px) {
+    width: 90vw;
   }
 `;
 
@@ -32,10 +31,7 @@ export const HeadingSec = styled.div`
   font-family: "graphik";
   margin-bottom: 63px;
   text-transform: capitalize;
-
- 
 `;
-
 
 export const Copyright = styled.div`
   width: 90vw;

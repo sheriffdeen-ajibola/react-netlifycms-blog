@@ -6,15 +6,11 @@ export const PostContainer = styled.div`
   height: 250px;
   margin-bottom: 60px;
 
-  @media screen and (max-width: 1100px){
-   
-        height: 205px;
-   
-   }
-   @media screen and (max-width: 590px){
+  @media screen and (max-width: 1100px) {
+    height: 205px;
+  }
+  @media screen and (max-width: 590px) {
     height: 500px;
-    
-    
   }
 
   &:not(:last-child) {
@@ -26,13 +22,13 @@ export const PostContainer = styled.div`
     color: ${colors.navy};
   }
 
-    & em {
-      font-weight: 500;
-      display: inline-block;
-      margin-top: -50px;
-      font-family: lobster;
-      font-size:1.25rem;
-    }
+  & em {
+    font-weight: 500;
+    display: inline-block;
+    margin-top: -50px;
+    font-family: lobster;
+    font-size: 1.25rem;
+  }
 
   & > div {
     height: 90%;
@@ -41,57 +37,46 @@ export const PostContainer = styled.div`
     align-items: center;
     justify-content: space-between;
 
-    @media screen and (max-width: 1400px){
-    gap: 40px;
-  }
-    
-  @media screen and (max-width: 1250px){
-    gap: 30px;
-  }
-  
-  @media screen and (max-width: 1100px){
-    gap: 20px;
-    
-  }
-
-  @media screen and (max-width: 590px){
-    height: 100%;
-    flex-direction: column-reverse;
-
-    
-    
-  }
-   
-}
-
-    img {
-     width: 30%;
-     @media screen and (max-width: 590px){
-    width: 100%;
-    height: 50%;
-    background-size: contain;
-    
-  }
+    @media screen and (max-width: 1400px) {
+      gap: 40px;
     }
 
-    p {
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 150%;
-      margin-top: 5px;
+    @media screen and (max-width: 1250px) {
+      gap: 30px;
+    }
 
-      @media screen and (max-width: 1250px){
-        font-size: 16px;
-   }
-   @media screen and (max-width: 1100px){
-        font-size: 14px;
-   }
+    @media screen and (max-width: 1100px) {
+      gap: 20px;
+    }
 
-    
-
+    @media screen and (max-width: 590px) {
+      height: 100%;
+      flex-direction: column-reverse;
+    }
   }
-    
-  
+
+  img {
+    width: 30%;
+    @media screen and (max-width: 590px) {
+      width: 100%;
+      height: 50%;
+      background-size: contain;
+    }
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    margin-top: 5px;
+
+    @media screen and (max-width: 1250px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 1100px) {
+      font-size: 14px;
+    }
+  }
 `;
 
 export const Textbox = styled.div`
@@ -101,16 +86,13 @@ export const Textbox = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media screen and (max-width: 1100px){
-    
-    width: 65%
+  @media screen and (max-width: 1100px) {
+    width: 65%;
   }
 
-  @media screen and (max-width: 590px){
-    
+  @media screen and (max-width: 590px) {
     width: 100%;
   }
-  
 
   & div {
     text-align: left;
@@ -132,20 +114,16 @@ export const Textbox = styled.div`
     gap: 0;
     height: 34px;
     margin-bottom: 10px;
-   
-    @media screen and (max-width: 590px){
-    
-    width: 100%
-  }
 
-    
+    @media screen and (max-width: 590px) {
+      width: 100%;
+    }
 
     span:last-child {
       font-weight: 600;
       background-color: #fff;
     }
 
-   
     & > * {
       min-width: 50px;
       padding: 8px 12px 10px 12px;
@@ -155,14 +133,10 @@ export const Textbox = styled.div`
       text-transform: uppercase;
       border-radius: 6px 0px 0px 6px;
 
-
-      @media screen and (max-width: 590px){
-    
+      @media screen and (max-width: 590px) {
         padding: 8px 6px 10px 6px;
-  }
+      }
     }
-
-  
   }
 `;
 
@@ -176,12 +150,12 @@ export const PostTitle = styled.div`
   text-align: left;
   background-color: #fff;
 
-  @media screen and (max-width: 1300px){
-  font-size: 25px;
-}
+  @media screen and (max-width: 1300px) {
+    font-size: 25px;
+  }
 
-@media screen and (max-width: 1100px){
-        font-size: 20px;
-        line-height: 110%;
-   }
+  @media screen and (max-width: 1100px) {
+    font-size: 20px;
+    line-height: 110%;
+  }
 `;

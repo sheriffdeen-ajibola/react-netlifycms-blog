@@ -11,27 +11,25 @@ export const Hero = styled.div`
   margin-bottom: 100px;
   box-sizing: inherit;
 
-
-  @media screen and (max-width: 1400px){
-   height: 500px;
-    
-  }
-  
-  @media screen and (max-width: 1250px){
-   height: 455px;
-   margin-bottom: 70px;
+  @media screen and (max-width: 1400px) {
+    height: 500px;
   }
 
-  @media screen and (max-width: 900px){
-   height: 55vh;
-   margin-bottom: 50px;
-   width: 98%;
-   border-radius: 0px 0px 10px 10px;
+  @media screen and (max-width: 1250px) {
+    height: 455px;
+    margin-bottom: 70px;
+  }
+
+  @media screen and (max-width: 900px) {
+    height: 60vh;
+    margin-bottom: 50px;
+
+    border-radius: 0px 0px 10px 10px;
   }
 `;
 
 export const Nav = styled.div`
- width: 85%;
+  width: 85%;
   margin: 0 auto;
   height: 120px;
   background-color: transparent;
@@ -44,24 +42,18 @@ export const Nav = styled.div`
   margin-bottom: 5px;
   box-sizing: border-box;
 
-
-
- 
-
-@media screen and (max-width: 1500px){
-  width: 1200px;
-}
-@media screen and (max-width: 1270px){
-  width: 950px;  
-}
-@media screen and (max-width: 1000px){
-  width: 750px;
-}
-@media screen and (max-width: 900px){
-width: 80vw;
-}
-
-
+  @media screen and (max-width: 1500px) {
+    width: 1200px;
+  }
+  @media screen and (max-width: 1270px) {
+    width: 950px;
+  }
+  @media screen and (max-width: 1000px) {
+    width: 750px;
+  }
+  @media screen and (max-width: 900px) {
+    width: 80vw;
+  }
 
   span {
     width: 108px;
@@ -76,12 +68,9 @@ width: 80vw;
     font-family: "graphik";
     font-size: 0.875rem;
     font-weight: 500;
-    @media screen and (max-width: 900px){
+    @media screen and (max-width: 900px) {
       display: none;
     }
-   
-
-   
   }
 `;
 
@@ -91,16 +80,13 @@ export const Ul = styled.ul`
   width: 483px;
   justify-content: space-between;
   padding: 0;
-  @media screen and (max-width: 900px){
-display: none;
-}
-  
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
 
-  @media screen and (max-width: 1300px){
-  width: 400px;
-
-  
-}
+  @media screen and (max-width: 1300px) {
+    width: 400px;
+  }
 
   li {
     color: ${colors.white};
@@ -109,14 +95,16 @@ display: none;
     list-style: none;
     font-family: "Graphik";
     cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
 
   li:not(:last-chiild) {
     margin-right: 40px;
-  
-
   }
-
 `;
 
 export const Logo = styled.div`
@@ -140,29 +128,24 @@ export const TextContainer = styled.div`
   padding-right: 25px;
   /* background: red; */
 
-  @media screen and (max-width: 1400px){
+  @media screen and (max-width: 1400px) {
     width: 70vw;
     height: 60%;
   }
 
-  @media screen and (max-width: 1250px){
+  @media screen and (max-width: 1250px) {
     width: 75vw;
   }
 
-  @media screen and (max-width: 1100px){
-  
-   text-align: center;
+  @media screen and (max-width: 1100px) {
+    text-align: center;
   }
-  @media screen and (max-width: 700px){
-   font-size: 3.5rem;
-   
+  @media screen and (max-width: 700px) {
+    font-size: 3.5rem;
   }
-  @media screen and (max-width: 590px){
-width: 90vw;
+  @media screen and (max-width: 590px) {
+    width: 90vw;
   }
-
-
- 
 
   h1 {
     font-size: 3.3rem;
@@ -170,21 +153,14 @@ width: 90vw;
     color: #fff;
     font-family: "graphik";
     width: 100%;
-    @media screen and (max-width: 1100px){
-   font-size: 2.8rem;
-   text-align: center;
-  
-  }
+    @media screen and (max-width: 1100px) {
+      font-size: 2.8rem;
+      text-align: center;
+    }
 
-   @media screen and (max-width: 590px){
-    font-size: 2rem;
-
-
-    
-  }
-
-   
-   
+    @media screen and (max-width: 590px) {
+      font-size: 2rem;
+    }
   }
 
   & span div {

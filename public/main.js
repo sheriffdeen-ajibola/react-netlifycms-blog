@@ -1,5 +1,3 @@
-
-
 const path = require("path");
 const fs = require("fs");
 
@@ -35,25 +33,28 @@ const getPosts = () => {
             return obj;
           }
         };
+
         const parseContent = ({ lines, metadataIndices }) => {
           if (metadataIndices.length > 0) {
             lines = lines.slice(metadataIndices[1] + 1, lines.length);
           }
           return lines.join("\n");
         };
+
         const lines = contents.split("\n");
         const metadataIndices = lines.reduce(getMetadataIndices, []);
         const metadata = parseMetadata({ lines, metadataIndices });
         const content = parseContent({ lines, metadataIndices });
         const date = new Date(metadata.date);
         const timestamp = date.getTime() / 1000;
-        console.log(timestamp)
+        console.log(timestamp);
 
         post = {
           id: timestamp,
           title: metadata.title ? metadata.title : "No title given",
           author: metadata.author ? metadata.author : "No author given",
           date: metadata.date ? metadata.date : "No date given",
+          excerpt: metadata.excerpt ? metadata.excerpt : "No excerpt given",
           category: metadata.category ? metadata.category : "No category given",
           image: metadata.image ? metadata.image : "No image given",
           content: content ? content : "No content given",

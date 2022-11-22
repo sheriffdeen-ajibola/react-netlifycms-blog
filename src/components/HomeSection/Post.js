@@ -4,8 +4,16 @@ import { PostContainer, Textbox, PostTitle } from "./Post.styled";
 import { Link } from "react-router-dom";
 import Markdown from "react-markdown";
 
-const Post = ({ image, category, title, date, content,author, id}) => {
- 
+const Post = ({
+  image,
+  category,
+  title,
+  date,
+  content,
+  author,
+  id,
+  excerpt,
+}) => {
   return (
     <PostContainer>
       <div>
@@ -13,19 +21,14 @@ const Post = ({ image, category, title, date, content,author, id}) => {
           <div>
             <span>{category}</span>
             <span>{date}</span>
-            
           </div>
-         
-
           <Link to={`/blogs/${id}`}>
             <PostTitle>{title}</PostTitle>
           </Link>
-          <span><em>By {author}</em></span>
-          <p>
-
-            <Markdown children={content} escapeHTML={false} />
-          
-          </p>
+          <span>
+            <em>By {author}</em>
+          </span>
+          <p>{excerpt}</p>
         </Textbox>
         <img src={image} alt="post image" />
       </div>

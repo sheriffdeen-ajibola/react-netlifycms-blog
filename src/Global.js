@@ -6,7 +6,6 @@ import graphikRegular from "./fonts/GraphikRegular.otf";
 import graphikLight from "./fonts/GraphikLight.otf";
 
 const GlobalStyle = createGlobalStyle`
-
   @font-face {
     font-family: 'graphik';
     src: url(${graphikBold}) format('truetype');
@@ -22,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-display: auto;
   }
-
+  
   @font-face {
     font-family: 'graphik';
     src: url(${graphikMedium}) format('truetype');
@@ -46,55 +45,47 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-display: auto;
   }
- 
 
-  body{
-    padding: 0;
-    margin: 0;
-    /* overflow: hidden; */
+  * {
+      font-family: 'graphik' 
+    } 
 
-    & *{
+    html, body{
+      padding: 0;
+      margin: 0;
+      
+    }
 
-      a{
+    p{
+      line-height: 1.8rem;
+    }
+
+  a{
     text-decoration: none;
     font-style: none;
 
     &:active,&:visited{
       color: white;
     }
-    
   }
-    }
-  }
-
-  *{
-    font-family: 'graphik' 
-   
-  }
-
-  @media screen and (max-width: 1400px){
-    html{
-font-size: 15px;
-    }
-  }
-    @media screen and (max-width: 1250px){
-    html{
-font-size: 14px;
-    }
-   
-
-    
-
-  }
-    @media screen and (max-width: 1100px){
-    html{
-font-size: 12px;
-    }
-    
-  }
-
-
 
 `;
 
 export default GlobalStyle;
+
+/* @media screen and (max-width: 1400px){
+    html{
+      font-size: 16px;
+    }
+  }
+    @media screen and (max-width: 1250px){
+    html{
+      font-size: 14px;
+    }
+  }
+    @media screen and (max-width: 1100px){
+    html{
+      font-size: 12px;
+    }
+    
+  } */

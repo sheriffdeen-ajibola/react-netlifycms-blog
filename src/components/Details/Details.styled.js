@@ -6,7 +6,7 @@ export const DetailsContainer = styled.div`
   box-sizing: border-box;
   min-height: 200px;
   margin: 0 auto;
- 
+
   & > * {
     color: ${colors.navy};
   }
@@ -15,9 +15,9 @@ export const DetailsContainer = styled.div`
 export const Image = styled.div`
   width: 100%;
   margin: 0 auto;
- 
+
   height: 30rem;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 
   & > * {
     box-sizing: border-box;

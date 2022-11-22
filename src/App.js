@@ -11,7 +11,6 @@ import Categories from "./components/Categories/Categories";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DetailsPage from "./components/Details/DetailsPage";
 
-
 function App() {
   const [category, setCategory] = useState("");
 
@@ -54,6 +53,7 @@ function App() {
                           category={post.category}
                           title={post.title}
                           date={post.date}
+                          excerpt={post.excerpt}
                           author={post.author}
                           content={excerptList[i]}
                           image={post.image}
@@ -98,7 +98,9 @@ function App() {
           <Route path="/library" element={<Library />} />
           <Route
             path="/categories/:category"
-            element={<Categories setCategory={setCategory} category={category} />}
+            element={
+              <Categories setCategory={setCategory} category={category} />
+            }
           />
 
           {/* <Route
@@ -112,11 +114,7 @@ function App() {
           />
  */}
 
-
-          <Route
-            path="/blogs/:title"
-            element={<DetailsPage/>}
-          />
+          <Route path="/blogs/:title" element={<DetailsPage />} />
         </Routes>
       </BrowserRouter>
     </div>
