@@ -23,11 +23,10 @@ export const PostContainer = styled.div`
   }
 
   & em {
-    font-weight: 500;
+    font-weight: 400;
     display: inline-block;
 
-    font-family: lobster;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   & > div {
@@ -75,6 +74,12 @@ export const PostContainer = styled.div`
     }
     @media screen and (max-width: 1100px) {
       font-size: 14px;
+      & em {
+        font-weight: 400;
+        display: inline-block;
+
+        font-size: 0.95rem;
+      }
     }
   }
 `;
@@ -142,7 +147,7 @@ export const Textbox = styled.div`
 
 export const PostTitle = styled.div`
   color: ${colors.navy};
-  font-weight: 700;
+  font-weight: 900;
   font-size: 28px;
   line-height: 120%;
   text-transform: capitalize;
@@ -156,6 +161,5 @@ export const PostTitle = styled.div`
 
   @media screen and (max-width: 1100px) {
     font-size: 20px;
-    line-height: 100%;
   }
 `;
