@@ -25,9 +25,9 @@ export const PostContainer = styled.div`
   & em {
     font-weight: 500;
     display: inline-block;
-    margin-top: -50px;
+
     font-family: lobster;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
 
   & > div {
@@ -66,9 +66,9 @@ export const PostContainer = styled.div`
 
   p {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 135%;
-    margin-top: 10px;
+    margin-top: 2px;
 
     @media screen and (max-width: 1250px) {
       font-size: 16px;
@@ -142,12 +142,13 @@ export const Textbox = styled.div`
 
 export const PostTitle = styled.div`
   color: ${colors.navy};
-  font-weight: 600;
+  font-weight: 700;
   font-size: 28px;
   line-height: 120%;
   text-transform: capitalize;
   text-align: left;
   background-color: #fff;
+  margin-bottom: 20px;
 
   @media screen and (max-width: 1300px) {
     font-size: 25px;

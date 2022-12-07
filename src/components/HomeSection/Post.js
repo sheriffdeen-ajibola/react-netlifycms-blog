@@ -16,10 +16,10 @@ const Post = ({ image, category, title, date, author, id, excerpt }) => {
           <Link to={`/blogs/${id}`}>
             <PostTitle>{title}</PostTitle>
           </Link>
+          <p>{excerpt}</p>
           <p>
             <em>{author}</em>
           </p>
-          <p>{excerpt}</p>
         </Textbox>
         <img src={image} alt="post image" />
       </div>
