@@ -56,7 +56,7 @@ Will output this html!
 | --- | --- | --- | --- |
 | 1   | 2   | 3   | 4   |
 
-```javascript
+```js
 const doc = getDocBySlug(params.slug);
 ```
 

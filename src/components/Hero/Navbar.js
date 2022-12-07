@@ -107,10 +107,10 @@ const Menulabel = styled.label`
   cursor: pointer;
   z-index: 1000;
   top: 2.3rem;
-  right: 6rem;
+  right: 4rem;
   border-radius: 50%;
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 3.5rem;
+  width: 3.5rem;
   text-align: center;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
   @media screen and (max-width: 700px) {
@@ -143,16 +143,16 @@ const Icon = styled.div`
   background-color: ${(props) =>
     props.clicked ? "transparent" : `${colors.navy}`};
   transition: all 0.3s;
-  width: 2.5rem;
+  width: 2rem;
   height: 2px;
   display: inline-block;
-  margin-top: 2.3rem;
+  margin-top: 1.8rem;
 
   &::before,
   &::after {
     content: "";
     background-color: ${colors.navy};
-    width: 2.5rem;
+    width: 2rem;
     height: 2px;
     display: inline-block;
 
@@ -162,12 +162,12 @@ const Icon = styled.div`
   }
 
   &::before {
-    top: ${(props) => (props.clicked ? "0" : "-0.8rem")};
+    top: ${(props) => (props.clicked ? "0" : "-0.6rem")};
     transform: ${(props) => (props.clicked ? "rotate(135deg)" : "rotate(0)")};
   }
 
   &::after {
-    top: ${(props) => (props.clicked ? "0" : "0.8rem")};
+    top: ${(props) => (props.clicked ? "0" : "0.6rem")};
 
     transform: ${(props) => (props.clicked ? "rotate(-135deg)" : "rotate(0)")};
   }

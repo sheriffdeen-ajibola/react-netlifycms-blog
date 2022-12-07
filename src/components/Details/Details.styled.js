@@ -7,8 +7,17 @@ export const DetailsContainer = styled.div`
   min-height: 200px;
   margin: 0 auto;
 
+  & div {
+    overflow: hidden;
+  }
+
   & > * {
     color: ${colors.navy};
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 1100px) {
+    width: 80vw;
   }
 `;
 
@@ -16,7 +25,7 @@ export const Image = styled.div`
   width: 100%;
   margin: 0 auto;
 
-  height: 30rem;
+  /* height: 30rem; */
   margin-bottom: 10px;
 
   & > * {

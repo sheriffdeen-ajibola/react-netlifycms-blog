@@ -45,8 +45,8 @@ export const Nav = styled.div`
   @media screen and (max-width: 1500px) {
     width: 1200px;
   }
-  @media screen and (max-width: 1270px) {
-    width: 950px;
+  @media screen and (max-width: 1300px) {
+    width: 900px;
   }
   @media screen and (max-width: 1000px) {
     width: 750px;
@@ -85,12 +85,12 @@ export const Ul = styled.ul`
   }
 
   @media screen and (max-width: 1300px) {
-    width: 400px;
+    width: 450px;
   }
 
   li {
     color: ${colors.white};
-    font-size: 1.125rem;
+    font-size: 1.1rem;
     font-weight: 500;
     list-style: none;
     font-family: "Graphik";
@@ -154,12 +154,12 @@ export const TextContainer = styled.div`
     font-family: "graphik";
     width: 100%;
     @media screen and (max-width: 1100px) {
-      font-size: 2.8rem;
+      font-size: 2.3rem;
       text-align: center;
     }
 
     @media screen and (max-width: 590px) {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 

@@ -17,7 +17,7 @@ Sample of inline highlighting `sum = parseInt(num1) + parseInt(num2)`
 
 Some Javascript code
 
-```javascript
+```js
 var num1, num2, sum;
 num1 = prompt("Enter first number");
 num2 = prompt("Enter second number");
@@ -27,7 +27,7 @@ alert("Sum = " + sum); // "+" means combine into a string
 
 Some Python code 🐍
 
-```python
+```js
 def fib():
     a, b = 0, 1
     while True:            # First iteration:
@@ -36,4 +36,5 @@ def fib():
 
 for index, fibonacci_number in zip(range(10), fib()):
      print('{i:3}: {f:3}'.format(i=index, f=fibonacci_number))
+
 ```

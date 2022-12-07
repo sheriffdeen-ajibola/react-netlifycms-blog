@@ -66,9 +66,9 @@ export const PostContainer = styled.div`
 
   p {
     font-weight: 500;
-    font-size: 18px;
-    line-height: 150%;
-    margin-top: 5px;
+    font-size: 16px;
+    line-height: 135%;
+    margin-top: 10px;
 
     @media screen and (max-width: 1250px) {
       font-size: 16px;
@@ -142,10 +142,9 @@ export const Textbox = styled.div`
 
 export const PostTitle = styled.div`
   color: ${colors.navy};
-  margin-bottom: 12px;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 28px;
-  line-height: 130%;
+  line-height: 120%;
   text-transform: capitalize;
   text-align: left;
   background-color: #fff;
@@ -156,6 +155,6 @@ export const PostTitle = styled.div`
 
   @media screen and (max-width: 1100px) {
     font-size: 20px;
-    line-height: 110%;
+    line-height: 100%;
   }
 `;

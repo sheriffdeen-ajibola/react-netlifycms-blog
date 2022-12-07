@@ -3,7 +3,7 @@ import { Container, Copyright, HeadingSec } from "../../Styled";
 import Footer from "../Footer/Footer";
 import Post from "../HomeSection/Post";
 import { CategoryContainer, Btndv, Button } from "./categories.styled";
-import postlist from '../../posts.json'
+import postlist from "../../posts.json";
 import { useParams } from "react-router-dom";
 
 const Categories = () => {
@@ -15,28 +15,31 @@ const Categories = () => {
     return post.content.split(" ").slice(0, 15).join(" ");
   });
 
-  const {category} = useParams();
-  console.log(category)
- 
+  const { category } = useParams();
+  console.log(category);
+
   return (
     <CategoryContainer>
       <>
         <Container>
           <HeadingSec>{category}</HeadingSec>
           {postlist &&
-           postlist.filter((post, i) => post.category === `${category}\r`)
-            .slice(0, `${pagination}`)
-            .map((post, i) => (
-              <Post  category={post.category}
-              title={post.title}
-              date={post.date}
-              author={post.author}
-              content={excerptList[i]}
-              image={post.image}
-              id={post.id} />
-            ))}
+            postlist
+              .filter((post, i) => post.category === `${category}\r`)
+              .slice(0, `${pagination}`)
+              .map((post, i) => (
+                <Post
+                  category={post.category}
+                  title={post.title}
+                  date={post.date}
+                  author={post.author}
+                  content={excerptList[i]}
+                  image={post.image}
+                  id={post.id}
+                  excerpt={post.excerpt}
+                />
+              ))}
         </Container>
-
         <Btndv>
           <Button onClick={handlePagination}>more articles</Button>
         </Btndv>

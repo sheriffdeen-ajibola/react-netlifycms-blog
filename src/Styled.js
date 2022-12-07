@@ -26,7 +26,7 @@ export const Container = styled.div`
 
 export const HeadingSec = styled.div`
   color: ${colors.navy};
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-weight: 900;
   font-family: "graphik";
   margin-bottom: 63px;
